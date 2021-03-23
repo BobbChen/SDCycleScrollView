@@ -142,7 +142,7 @@ NSString * const ID = @"SDCycleScrollViewCell";
     mainView.showsHorizontalScrollIndicator = NO;
     mainView.showsVerticalScrollIndicator = NO;
     [mainView registerClass:[SDCollectionViewCell class] forCellWithReuseIdentifier:ID];
-    
+    mainView.semanticContentAttribute = UISemanticContentAttributeForceLeftToRight;
     mainView.dataSource = self;
     mainView.delegate = self;
     mainView.scrollsToTop = NO;
